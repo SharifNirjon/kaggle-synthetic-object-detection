@@ -1,0 +1,50 @@
+# Virtual Environment (MOST IMPORTANT!)
+venv/
+env/
+ENV/
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Dataset images (too large for GitHub)
+data/train/**/images/*.jpg
+data/train/**/images/*.png
+data/val/**/images/*.jpg
+data/val/**/images/*.png
+
+# But keep the structure visible
+!data/train/**/images/.gitkeep
+!data/val/**/images/.gitkeep
+
+# Model weights (large files)
+runs/
+*.pt
+*.pth
+*.onnx
+
+# Training outputs
+*.log
+*.cache
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary
+*.tmp
+.cache/
